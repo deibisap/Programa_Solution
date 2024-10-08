@@ -4,6 +4,9 @@ const usuariosController = require("../controllers/usuariosController");
 
 
 /* GET home page. */
-router.get('/',usuariosController.index);
+router.get('/',function(req, res, next){
+        res.send('Bienvenido a solution');
+
+});
   
 module.exports = router;
