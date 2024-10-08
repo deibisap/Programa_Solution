@@ -9,8 +9,5 @@ index:function(req,res){
         console.log(datos);
     });
 
-
-
-    
-    res.render ('usuarios/index',{title: 'Aplicacion'});
+        res.render ('usuarios/index',{title: 'Aplicacion'});
 }}
