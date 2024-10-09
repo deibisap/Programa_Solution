@@ -7,37 +7,48 @@
     <title>Document</title>
 </head>
 <body>
-    <table class="table table-light">
-        <thead class="thead-light">
-            <tr>
-                
-                <th>ID</th>
-                <th>NOMBRES</th>
-                <th>APELLIDOS</th>
-                <th>EMAIL</th>
-                <th>TELEFONO</th>
-                <th>FECHA REG</th>
-                <th>ACCIONES</th>
-            </tr>
-        </thead>
-        <tbody>
+    <br/>
+    <br/>
+    <a href="/usuarios/crear" class="btn btn-primary" type="button">Crear usuario</a>
+    <br/>
+    <br>
+    
+    <div class="container">
 
-             <% for( let usuario = 0; usuario < usuarios_mostrar.length; usuario++ ) { %>
-             
+        <table class="table table-light">
+            <thead class="thead-light">
                 <tr>
-                    <td> <%=usuarios_mostrar[usuario].idUSUARIOS %> </td>
-                    <td> <%=usuarios_mostrar[usuario].Nombres %> </td>
-                    <td> <td> <%=usuarios_mostrar[usuario].Apellidos %> </td></td>
-                    <td> <td> <%=usuarios_mostrar[usuario].Correo %> </td> </td>
-                    <td> <td> <%=usuarios_mostrar[usuario].Telefono %> </td> </td>
-                    <td> <td> <%=usuarios_mostrar[usuario].Fecha_registro %> </td></td>
-                    <td> EDITAR | BORRAR </td>
+                    
+                    <th>ID</th>
+                    <th>NOMBRES</th>
+                    <th>APELLIDOS</th>
+                    <th>EMAIL</th>
+                    <th>TELEFONO</th>
+                    <th>FECHA REG</th>
+                    <th>ACCIONES</th>
                 </tr>
-
-             <% } %>
-
-            
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+    
+                 <% for( let usuario = 0; usuario < usuarios_mostrar.length; usuario++ ) { %>
+                 
+                    <tr>
+                        <td> <%=usuarios_mostrar[usuario].idUSUARIOS %> </td>
+                        <td> <%=usuarios_mostrar[usuario].Nombres %> </td>
+                        <td> <td> <%=usuarios_mostrar[usuario].Apellidos %> </td></td>
+                        <td> <td> <%=usuarios_mostrar[usuario].Correo %> </td> </td>
+                        <td> <td> <%=usuarios_mostrar[usuario].Telefono %> </td> </td>
+                        <td> <td> <%=usuarios_mostrar[usuario].Fecha_registro %> </td></td>
+                        <td> EDITAR | BORRAR </td>
+                    </tr>
+    
+                 <% } %>
+    
+                
+            </tbody>
+        </table>
+        
+    </div>
+    
 </body>
 </html>
