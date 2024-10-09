@@ -10,13 +10,13 @@
     <table class="table table-light">
         <thead class="thead-light">
             <tr>
-                <th>#</th>
+                
                 <th>ID</th>
                 <th>NOMBRES</th>
                 <th>APELLIDOS</th>
                 <th>EMAIL</th>
                 <th>TELEFONO</th>
-                <th>FECHA DE REGISTRO</th>
+                <th>FECHA REG</th>
                 <th>ACCIONES</th>
             </tr>
         </thead>
@@ -25,18 +25,14 @@
              <% for( let usuario = 0; usuario < usuarios_mostrar.length; usuario++ ) { %>
              
                 <tr>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
-                    <td> - </td>
+                    <td> <%=usuarios_mostrar[usuario].idUSUARIOS %> </td>
+                    <td> <%=usuarios_mostrar[usuario].Nombres %> </td>
+                    <td> <td> <%=usuarios_mostrar[usuario].Apellidos %> </td></td>
+                    <td> <td> <%=usuarios_mostrar[usuario].Correo %> </td> </td>
+                    <td> <td> <%=usuarios_mostrar[usuario].Telefono %> </td> </td>
+                    <td> <td> <%=usuarios_mostrar[usuario].Fecha_registro %> </td></td>
                     <td> EDITAR | BORRAR </td>
                 </tr>
-
 
              <% } %>
 
