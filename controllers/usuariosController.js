@@ -8,7 +8,7 @@ index:function(req,res){
 
     usuario.obtener(conexion,function(error,datos) {
             console.log(datos);
-            res.render ('usuarios/index',{title: 'Aplicacion'});
+            res.render ('usuarios/index',{title: 'Aplicacion', usuarios_mostrar:datos});
     });
 
    //con.query("SELECT * FROM usuarios", function (err,datos){

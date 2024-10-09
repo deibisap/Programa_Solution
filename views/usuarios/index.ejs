@@ -21,18 +21,26 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> - </td>
-                <td> EDITAR | BORRAR </td>
-            </tr>
+
+             <% for( let usuario = 0; usuario < usuarios_mostrar.length; usuario++ ) { %>
+             
+                <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> EDITAR | BORRAR </td>
+                </tr>
+
+
+             <% } %>
+
+            
         </tbody>
     </table>
 </body>
