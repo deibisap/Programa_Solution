@@ -10,10 +10,12 @@ index:function(req,res){
             console.log(datos);
             res.render ('usuarios/index',{title: 'Aplicacion', usuarios_mostrar:datos});
     });
+  
+},
 
-   //con.query("SELECT * FROM usuarios", function (err,datos){
-       // console.log(datos);
-    //});
-       
+crear_usuario: function (res, req) {
+
+    res.render ('usuarios/crear_usuario');
+    
 }
 }
